@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/i3: i3
+    ~/.config/dunst: dunst
+    ~/.config/polybar: polybar
+    /etc/nixos/configuration.nix: nixos/configuration.nix
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
